@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x400?text=Car+Rental');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .cars {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .car {
+            background: white;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        .car img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Car Rental Service</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#cars">Cars</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home" class="hero">
+        <h2>Welcome to Our Car Rental</h2>
+        <p>Rent the best cars at affordable prices.</p>
+        <button onclick="alert('Booking feature coming soon!')">Book Now</button>
+    </section>
+    <section id="cars" class="cars">
+        <div class="car">
+            <img src="https://via.placeholder.com/300x200?text=BMW+X5" alt="BMW X5">
+            <h3>BMW X5</h3>
+            <p>Luxury SUV</p>
+            <p>$50/day</p>
+            <button>Rent Now</button>
+        </div>
+        <div class="car">
+            <img src="https://via.placeholder.com/300x200?text=Audi+A4" alt="Audi A4">
+            <h3>Audi A4</h3>
+            <p>Sedan</p>
+            <p>$40/day</p>
+            <button>Rent Now</button>
+        </div>
+        <div class="car">
+            <img src="https://via.placeholder.com/300x200?text=Toyota+Camry" alt="Toyota Camry">
+            <h3>Toyota Camry</h3>
+            <p>Reliable Sedan</p>
+            <p>$35/day</p>
+            <button>Rent Now</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Car Rental. All rights reserved.</p>
+    </footer>
+    <script>
+        // Simple JS for interactivity
+        document.querySelectorAll('.car button').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Redirecting to booking page...');
+            });
+        });
+    </script>
+</body>
+</html>
